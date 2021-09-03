@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICON TAB -->
+    <link rel="icon" href="./assets/icon.png">
+    <!-- TITLE TAB -->
+    <title>Churrascômetro</title>
+
+    <!-- EXTERN CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONs -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- STYLE SCROLLBAR -->
+    <style>
+
+        ::-webkit-scrollbar{
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track{
+            box-shadow: inset 0 0 10px rgba(0, 0, 0,1.9);
+        }
+
+        ::-webkit-scrollbar-thumb{
+            border-radius: 5px;
+            background-color: rgb(43, 43, 43);
+        }
+
+        ::-webkit-scrollbar-thumb:hover{
+            background-color: rgb(63, 62, 62);
+        }
+
+    </style>
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo">
+                <h2><a href="#">BARBECUE</a></h2>
+            </div>
+                <ul class="nav-links">
+                    <li><a href="#churrascometro">CHURRASCÔMETRO</a></li>
+                    <li><a href="#playlist">PLAYLIST</a></li>
+                    <li><a href="#">SUPORTE</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+        </nav>
+        <div class="text-box">
+            <img src="./assets/logo1.png">
+            <h1>O Melhor Aplicativo Para<br>o Seu Churrasco</h1>
+        </div>
+    </section>
+
+<!----- CHURRASCÔMETRO ------->
+
+    <section class="barbecue" id="churrascometro">
+        <div class="allThing">
+
+            <div class="container">
+                <h1>Churrascômetro</h1>
+                <input id="adultos" name ="adultos" type="number" placeholder="Adultos">
+                <input id="criancas" name ="criancas" type="number" placeholder="Crianças">
+                <input id="duracao" name ="duracao" type="number" placeholder="Duração (h)">
+                <button id="botao" onclick="calcular()">Calcular</button>
+            
+                <div id="resultado"></div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- SPOTIFY -->
+
+    <section class="spotify" id="playlist">
+        <div class="box">
+            <img id="button" src="./assets/spotify.png" alt="">
+            <h2>[ CLICK NO ICONE ]</h2>
+        </div>
+
+
+                    <!-- modal section -->
+        <div class="bg-modal">
+            <div class="moda-content">
+                <div class="close">+</div>
+                <iframe src="https://open.spotify.com/embed/playlist/4C4RIc6Lbq39BS5MkGM5aD?theme=0" width="100%" height="100%" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="border-radius: 10px;"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automação do Header -->
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+    <!-- EXTERN JS -->
+    <script src="./script.js"></script>
+</body>
+</html>
