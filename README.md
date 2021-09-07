@@ -5,7 +5,7 @@
 </p>
 
 <h2 align="center">
-  Acesse o Churrascômetro Clicando <a target="_blank" href="https://eltonalmeid.github.io/churrascometro/">AQUI</a>.
+  Acesse o Churrascômetro Clicando <a target="_blank" href="https://eltonalmeid.github.io/churrascometro/">AQUI</a>
 </h2>
 
 <div align="center">
