@@ -4,6 +4,10 @@
   <img alt="mockup" src=".github/mockupMacbook.png" width="100%">
 </p>
 
+<h2 align="center">
+  Acesse o Churrascômetro Clicando <a target="_blank" href="https://eltonalmeid.github.io/churrascometro/">AQUI</a>
+</h2>
+
 <div align="center">
    Projeto desenvolvido com ensinamentos do curso ProgramadorBR
 </div>
