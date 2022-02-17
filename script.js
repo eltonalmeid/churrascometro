@@ -23,7 +23,7 @@ function calcular(){
     let qdtTotalCerveja = cervejaPP(duracao) * adultos;
     let qdtTotalBebidas = bebidasPP(duracao) * adultos + (bebidasPP(duracao)/2 * criancas);
 
-    resultado.innerHTML = `<br><br><h2 class="result-info"><FONT COLOR = white>Resultado:</h2>`
+    resultado.innerHTML = `<br><br><h2 class="result-info"><FONT COLOR = white>Resultado:</h2>`;
 
     
     resultado.innerHTML += 
@@ -32,14 +32,48 @@ function calcular(){
     </div>`;
 
     resultado.innerHTML += 
-    `
-    <div class="result-block"><img src="./assets/beer.png">
+    `<div class="result-block"><img src="./assets/beer.png">
     <p>${Math.ceil(qdtTotalCerveja / 355)} Latas de Cerveja</p></div>`;
 
-    resultado.innerHTML += `
-    <div id="beer" class="result-block"><img src="./assets/bottle.png">
+    resultado.innerHTML += 
+    `<div id="beer" class="result-block"><img src="./assets/bottle.png">
     <p>${Math.ceil(qdtTotalBebidas / 2000)} Garrafas de 2l de Bebidas</p></div>`;
 
+    resultado.innerHTML +=
+    `<div class="result-block" id="infoIcon"><img src="./assets/infoIcon.png">`
+
+    // MODAL
+    //  Get modal element
+    var modal = document.getElementById('simpleModal');
+    // Get open modal button
+    var infoIcon = document.getElementById('infoIcon');
+    // Get close button
+    var closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+    // Listen for open click
+    infoIcon.addEventListener('click', openModal);
+
+    // Listen for close click
+    closeBtn.addEventListener('click', closeModal);
+    // Listen for outside click
+    window.addEventListener('click', outsideClick);
+
+    // Function to open modal
+    function openModal(){
+        modal.style.display = 'block';
+    }
+
+    // Function to close modal
+    function closeModal(){
+        modal.style.display = 'none';
+    }
+
+    // Function to close modal if outside click
+    function outsideClick(e){
+        if(e.target == modal){
+        modal.style.display = 'none';
+        }
+    }
 }
 
 function carnePP(duracao){
