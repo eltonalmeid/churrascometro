@@ -1,7 +1,7 @@
 <h1>Churrascômetro</h1>
 
 <p align="center">
-  <img alt="mockup" src=".github/mockupMacbook.png" width="100%">
+  <img alt="mockup" src=".github/mockupMacbook.jpg" width="100%">
 </p>
 
 <h2 align="center">
